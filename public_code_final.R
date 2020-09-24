@@ -23,7 +23,7 @@ require(RCurl)
 #NOTE:
 
 #upps_ss = UPPS Sensation Seeking
-#upps_pmt = UPPS Premeditatino
+#upps_pmt = UPPS Premeditation
 #alc_bingeyr_ord = Past Year Heavy Episodic Drinking Quantity
 ########
 #Unconditional Growth Model of Sensation Seeking and Premeditation
