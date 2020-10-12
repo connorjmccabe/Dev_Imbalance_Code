@@ -351,7 +351,8 @@ lds.full<-readRDS(url("https://github.com/connorjmccabe/Dev_Imbalance_Code/blob/
 lds.matinput<-lavaan(model=m.lds.full,
        sample.cov=lds.full$cov,
        sample.mean=lds.full$mean,
-       sample.nobs=774)
+       sample.nobs=774,
+       mimic="Mplus")
 
 fitmeasures(lds.matinput)[c("df","chisq","rmsea","cfi","tli","srmr")]
 
