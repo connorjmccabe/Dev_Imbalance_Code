@@ -6,8 +6,9 @@
 
 #This code provides comprehensive code for all SEM models described in the manuscript.
 #These are re-constructed using the covariance matrix from the sample data given that we were unable to share the data directly.
-#As such, fit measures and standard errors may not be directly comparable to the mmodel results estimated on the observed sample. Nonetheless, estimates provided by the code below will reflect the associations reported in the manuscript.
-
+#As such, fit measures and standard errors may not be directly comparable to the mmodel results estimated on the observed sample. 
+#Nonetheless, estimates provided by the code below will reflect the associations reported in the manuscript.
+options(scipen=20,warn=-1,digits=4) #options for readibilitiy
 
 ###Minor setup code
 
