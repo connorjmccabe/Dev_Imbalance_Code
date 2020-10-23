@@ -8,13 +8,13 @@
 #These are re-constructed using the covariance matrix from the sample data given that we were unable to share the data directly.
 #As such, fit measures and standard errors may not be directly comparable to the mmodel results estimated on the observed sample. 
 #Nonetheless, estimates provided by the code below will reflect the associations reported in the manuscript.
-options(scipen=20,warn=-1,digits=4) #options for readibilitiy
 
 ###Minor setup code
 
 packages.req <- c("lavaan","RCurl")
 new.packages <- packages.req[!(packages.req %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages)
+options(scipen=20,warn=-1,digits=4) #options for readability
 
 require(lavaan)
 require(RCurl)
