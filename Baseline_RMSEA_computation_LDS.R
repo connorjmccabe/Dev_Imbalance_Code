@@ -11,7 +11,10 @@ fits.lds<-readRDS(url("https://github.com/connorjmccabe/Dev_Imbalance_Code/blob/
 
 ##the object fits.lds provides 72 fit measures that readers are welcomed/encouraged
 # to examine. We report several in our manuscript, but describe below a consideration
-#for interpreting CFIs.
+#for interpreting relative fit measures (e.g., CFIs).
+#Run the line of code below to view all available fit measures:
+
+fits.lds
 
 #Below, we compute scaled RMSEA value manually using the scaled variant given the use of
 #MLR in analyses. We compare a manual computation to the estimated one as a "check"
@@ -28,7 +31,7 @@ fits.lds$rmsea.scaled#We can see these are essentially identical.
 
 #As a more formal final check, we used the nullRMSEA function from semTools
 #to compute this value. When supplied with our estimated model, results
-#were as follows:
+#were nearly identical, as follows:
 
 #> nullRMSEA(lds.final,scaled=T)
 #The baseline model's RMSEA = 0.1112
