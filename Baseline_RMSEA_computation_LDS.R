@@ -9,7 +9,7 @@ require(semTools)
 fits.lds<-readRDS(url("https://github.com/connorjmccabe/Dev_Imbalance_Code/blob/master/DI_LDS_fits.rds?raw=true"))%>% as.list()
 
 
-##the object fits.lds provides 72 fit measures that readers are welcomed/encouraged
+##the object fits.lds provides fit measures that readers are welcomed/encouraged
 # to examine. We report several in our manuscript, but describe below a consideration
 #for interpreting relative fit measures (e.g., CFIs).
 #Run the line of code below to view all available fit measures:
@@ -36,5 +36,5 @@ fits.lds$rmsea.scaled#We can see these are essentially identical.
 #> nullRMSEA(lds.final,scaled=T)
 #The baseline model's RMSEA = 0.1112
 
-#CFI, TLI, and other incremental fit indices may not be very informative because the baseline model's RMSEA < 0.158 (Kenny, Kaniskan, & McCoach, 2015).
+#"CFI, TLI, and other incremental fit indices may not be very informative because the baseline model's RMSEA < 0.158 (Kenny, Kaniskan, & McCoach, 2015)."
 
